@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneos de Warzone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="animate-title">Torneos de Warzone</h1>
+        </div>
+        <!-- Menú desplegable -->
+        <nav>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#torneos" class="nav-link">Torneos</a></li>
+                <li><a href="#premios" class="nav-link">Premios</a></li>
+                <li><a href="#registro" class="nav-link">Registro</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección de Inicio -->
+        <section id="inicio" class="section">
+            <div class="hero-content">
+                <h2 class="animate-on-scroll">¡Gana tus primeras ganancias jugando Warzone!</h2>
+                <p class="animate-on-scroll">¿Te gustaría convertir tu pasión por los videojuegos en earnings reales? ¡Este es tu momento!</p>
+                <p class="animate-on-scroll">Únete a la comunidad de <strong>Lic_Rodriguezzz</strong> y participa en nuestros torneos exclusivos.</p>
+                <a href="#registro" class="cta-button animate-on-scroll">¡Quiero unirme!</a>
+                
+                <div class="comunidad-info animate-on-scroll">
+                    <h3>¿Por qué unirte a nuestra comunidad?</h3>
+                    <ul>
+                        <li>✅ Torneos emocionantes con premios en efectivo.</li>
+                        <li>✅ Ambiente amigable y competitivo.</li>
+                        <li>✅ Soporte y guía de la comunidad de Lic_Rodriguezzz.</li>
+                        <li>✅ Oportunidad de crecer como jugador profesional.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Torneos -->
+        <section id="torneos" class="section">
+            <div class="info-content">
+                <h2 class="animate-on-scroll">Torneos</h2>
+                <p class="animate-on-scroll">¡Nuestros torneos se llevan a cabo los fines de semana! No te pierdas la oportunidad de participar.</p>
+                
+                <div class="torneos-info animate-on-scroll">
+                    <div class="torneo-card">
+                        <h3>Horarios</h3>
+                        <p>Los torneos se realizan en los siguientes horarios:</p>
+                        <ul>
+                            <li><strong>Sábados:</strong> 12:00 - 15:00 y 17:00 - 20:00</li>
+                            <li><strong>Domingos:</strong> 12:00 - 15:00 y 17:00 - 20:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Premios -->
+        <section id="premios" class="section">
+            <div class="info-content">
+                <h2 class="animate-on-scroll">Premios</h2>
+                <p class="animate-on-scroll">El premio aumenta dependiendo del número de participantes. ¡Mientras más personas se unan, mayor será el premio!</p>
+                <div class="premio-calculator animate-on-scroll">
+                    <label for="participantes">Número de participantes:</label>
+                    <input type="number" id="participantes" min="1" max="150" placeholder="Ingresa el número de participantes">
+                    <button onclick="calcularPremio()">Calcular Premio</button>
+                    <p id="resultado-premio"></p>
+                </div>
+                <p class="animate-on-scroll">El premio máximo es de <strong>$4,000 MXN</strong> con 150 participantes.</p>
+            </div>
+        </section>
+
+        <!-- Sección de Registro -->
+        <section id="registro" class="section">
+            <div class="info-content">
+                <h2 class="animate-on-scroll">Registro</h2>
+                <p class="animate-on-scroll">Para participar, regístrate en nuestro servidor de Discord y paga la cuota de entrada de $50 MXN.</p>
+                <a href="https://discord.gg/torneoswarzone" class="cta-button animate-on-scroll">Únete a Discord</a>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="section">
+            <div class="info-content">
+                <h2 class="animate-on-scroll">Contacto</h2>
+                <p class="animate-on-scroll">¿Tienes preguntas? Contáctanos a través de nuestras redes sociales:</p>
+                <div class="redes-sociales animate-on-scroll">
+                    <a href="https://sl.bing.net/bwp8QUB8Oy" target="_blank" class="red-social">
+                        📸 Instagram
+                    </a>
+                    <a href="https://sl.bing.net/hwBAmC6yqEC" target="_blank" class="red-social">
+                        🎵 TikTok
+                    </a>
+                    <a href="https://sl.bing.net/jpX4WY8TugK" target="_blank" class="red-social">
+                        ▶️ YouTube
+                    </a>
+                    <a href="https://sl.bing.net/iqr6uPCJ0g0" target="_blank" class="red-social">
+                        🎮 Discord
+                    </a>
+                    <a href="https://sl.bing.net/jnLamLrvQcu" class="red-social">
+                        🚀 Kick
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Enlazar el archivo JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
