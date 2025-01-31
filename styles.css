@@ -1,0 +1,269 @@
+/* Fuente personalizada */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    overflow-x: hidden; /* Evita el scroll horizontal no deseado */
+}
+
+header {
+    background-color: #2e8b57; /* Verde medio */
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Animación del título */
+.animate-title {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Dorado al pasar el mouse */
+    transform: scale(1.1); /* Efecto de escala */
+}
+
+main {
+    padding-top: 80px; /* Espacio para el header fijo */
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #2e8b57; /* Verde medio */
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.hero-content strong {
+    color: #ffd700; /* Dorado */
+}
+
+.comunidad-info {
+    margin-top: 30px;
+    text-align: left;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.comunidad-info h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #2e8b57; /* Verde medio */
+}
+
+.comunidad-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.comunidad-info ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    position: relative;
+    padding-left: 25px;
+}
+
+.comunidad-info ul li::before {
+    content: "✔️";
+    position: absolute;
+    left: 0;
+    color: #2e8b57; /* Verde medio */
+}
+
+.cta-button {
+    background-color: #228b22; /* Verde oscuro */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #1c7a1c; /* Verde más oscuro al pasar el mouse */
+    transform: scale(1.1); /* Efecto de escala */
+}
+
+.info-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #2e8b57; /* Verde medio */
+}
+
+.info-content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.torneos-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.torneo-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.torneo-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.torneo-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #2e8b57; /* Verde medio */
+}
+
+.torneo-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.torneo-card ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+footer {
+    background-color: #2e8b57; /* Verde medio */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+/* Estilos para la calculadora de premios */
+.premio-calculator {
+    margin-top: 20px;
+}
+
+.premio-calculator label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.premio-calculator input {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.premio-calculator button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #228b22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.premio-calculator button:hover {
+    background-color: #1c7a1c;
+}
+
+#resultado-premio {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/* Animaciones para las tarjetas y secciones */
+.hero-content h2,
+.hero-content p,
+.comunidad-info,
+.torneo-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.hero-content h2.visible,
+.hero-content p.visible,
+.comunidad-info.visible,
+.torneo-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
